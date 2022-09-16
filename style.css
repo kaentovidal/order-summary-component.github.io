@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+:root{
+    /*? Primary colors */
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    /*? Neutral colors */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+html{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body {
+    background: url('images/pattern-background-desktop.svg') no-repeat var(--pale-blue);
+}
+main{
+    position: relative;
+    max-width: 450px;
+    background-color: white;
+    border-radius: 2rem;
+}
+.hero {
+    border-radius: 2rem 2rem 0 0;
+}
+h1{
+    text-align: center;
+    margin-top: 2rem;
+}
+p {
+    font-size: 16px;
+    padding: 1rem 3rem;
+    text-align: center;
+    color: var(--desaturated-blue);
+}
+.plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: var( --very-pale-blue);
+    border-radius: 1rem;
+}
+.plan .plan-son {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+h2 {
+    font-size: 16px;
+    font-weight: 900;
+}
+.plan .change {
+    text-decoration: underline;
+    color: var(--bright-blue);
+    font-weight: 700;
+}
+.plan .change:hover {
+    text-decoration: none;
+    color: var( --desaturated-blue);
+    cursor: pointer;
+}
+.plan-son span {
+    color: var(--desaturated-blue);
+    font-weight: 400;
+}
+button {
+    padding: 1rem;
+    display: block;
+    margin: auto;
+    border: none;
+    cursor: pointer;
+    font-weight: 900;
+}
+.main-button {
+    width: 80%;
+    border-radius: 1rem;
+    color: white;
+    background-color: var(--bright-blue);
+}
+.main-button:hover {
+    background-color: var(--desaturated-blue);
+}
+.cancel-button {
+    background-color: transparent;
+    color: var(--desaturated-blue);
+    font-size: 16px;
+    padding: 1rem 0 3rem 0;
+}
+.cancel-button:hover{
+    color: var( --dark-blue);
+}
+
+
+
